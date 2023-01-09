@@ -10,7 +10,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 600px 600px 600px;
+  grid-template-columns: 33% 33% 33%;
   grid-column-gap: 20px; 
 
 }
