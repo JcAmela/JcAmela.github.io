@@ -27,6 +27,7 @@ function sonido() {
     document.getElementById("boton1").onclick = sonarGanar;
     document.getElementById("boton2").onclick = sonarFinal;
     document.querySelectorAll("body").insertAdjacentHTML = ("beforeend", `<button id="boton1">Escuchar sonido 1</button><br><button id="boton2">Escuchar sonido 2</button>`)
+    document.getElementById("boton3").onclick = sonarLanzar;
 }
 function sonarGanar() {
     // Asignar la ruta del archivo de audio "ganar.mp3" al atributo "src" del elemento "audio"
@@ -43,8 +44,18 @@ function sonarFinal() {
     // Reproducir el archivo de audio
     document.getElementById("sonido").play();
 };
+function sonarLanzar() {  //Añadida la función para reproducir el archivo lanzar.mp3 
 
+    //Asigna la ruta del archivo de audio lanzar.mp3 al atributo src del elemento audio 
+
+    document.getElementById("sonido").src = "audios/lanzar.mp3";
+
+    //Reproduce el archivo de audio 
+
+    document.getElementById("sonido").play();
+}
 function tirar() {
+    sonarLanzar()
     boleanoTirar = true
     if (coin <= 0) {
         sinPasta();
@@ -59,7 +70,7 @@ function tirar() {
 };
 
 function cambiarImagen(k) {
-   
+
     azar[k] = Math.floor(Math.random() * imagenes.length);
     document.querySelectorAll(".ventana img")[k].src = `img/${imagenes[azar[k]]}`;
 }
