@@ -5,60 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio - Juan Carlos Amela Barrero</title>
+    <title>Juan Carlos Amela Barrero</title>
     <link rel="stylesheet" href="style.css">
     <script src="codigo.js"></script>
 </head>
 
 <body>
-    <header class="encabezado">
-        <h2>Juan Carlos Amela Barrero</h2>
-        <h3>Introducción</h3>
-        <p>Mi nombre es Juan Carlos Amela Barrero y soy un desarrollador web con experiencia en Python, HTML, CSS y
-            JavaScript.
-            En
-            este portafolio encontrarás información sobre mi experiencia, proyectos y habilidades.</p>
-        <hr>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Formación</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades & Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <div class="bloque1">
-            <h3>Resumen</h3>
-            <p>Mi experiencia laboral como frigorista, lampista y técnico en reparación de maquinaria de hostelería por más de diez años me ha permitido adquirir habilidades importantes como el trabajo en equipo, la resolución de problemas y la atención al detalle del cliente. Además, mi formación en programación JavaScript y Python en la Academia CIFO l'Hospitalet y PUE.es me ha brindado los conocimientos técnicos necesarios para desempeñarme como desarrollador front-end. Actualmente, estoy realizando un bootcamp de front-end en Inkor Academy donde también estoy aprendiendo a usar el framework Vue para desarrollar aplicaciones web interactivas y dinámicas. Con esta formación, estoy adquiriendo una base sólida y avanzada en el desarrollo front-end.</p>
-        </div>
-        <div class="bloque2">
-            <h3>Habilidades</h3>
-            <p>Soy un desarrollador web con experiencia en los siguientes lenguajes y frameworks:</p>
-            <div class="logo">
-                <img src="logos/javascript.png" alt="Logo de JavaScript" title="JavaScript" class="logo-border">
-                <img src="logos/css.png" alt="Logo de CSS" title="CSS" class="logo-border">
-                <img src="logos/html.png" alt="Logo de HTML" title="HTML" class="logo-border">
-                <img src="logos/python.png" alt="Logo de Python" title="Python" class="logo-border">
-                <img src="logos/vue.png" alt="Logo de VUE" title="VUE" class="logo-border">
-                <h3>Formación</h3>
-                <p>Introduccion a la programacion con Javascript en la academia</p><a href="https://cifovirtual.cat/"
-                    target="_blank">Cifo l'Hospitalet.</a>
-                <p>Formandome en el curso de front end actualmente en: </p><a href="https://inkorformacion.com/" target="_blank">Inkor
-                    Academy.</a><br>
-                <p>Fundamentos de programacion en Python por la academia </p><a href="https://www.pue.es/"
-                    target="_blank">PUE.es</a>
-                <p>Diploma disponible en el siguiente enlace.</p> <a href="diplomas/python-pue.pdf"
-                    target="_blank">Fundamentos de programación en Python</a><br>
-                <a href="diplomas/diploma introduccion a la programacion javascript.PDF" target="_blank">Introduccion a
-                    la programacion JavaScript</a>
+        <section id="experiencia-educacion" class="container">
+            <div class="card-header" id="introduccion">
+              <h2><a href="https://serveiocupacio.gencat.cat/es/soc/com-ens-organitzem/centres-propis-formacio-cifo-cfpa/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-hospitalet-de-llobregat/" target="_blank">CIFO Hospitalet</a></h2>
             </div>
-        </div>
-        <div class="bloque3">
-            <p>Proyecto final del curso de introducción a la programación</p><br>
-            <button onclick="openProject()">Abrir proyecto final</button>
-        </div>
-        </div>
+            <div class="card-body">
+              <p>Comencé mi trayectoria como estudiante con una introducción a la programación JavaScript en CIFO Hospitalet.</p>
+            </div>
+          </section>
+          
+          <section id="experiencia-educacion" class="container">
+            <div class="card-header">
+              <h2><a href="http://inkorformacion.com/" target="_blank">InKor Formación</a></h2>
+            </div>
+            <div class="card-body">
+              <p>Continué mi formación con un curso de front-end en InKor Formación, donde aprendí las bases del desarrollo web.</p>
+            </div>
+          </section>
+          
+          <section id="experiencia-educacion" class="container">
+            <div class="card-header">
+              <h2><a href="https://bluegoatlabs.com/" target="_blank">Blue Goat Labs</a></h2>
+            </div>
+            <div class="card-body">
+              <p>Realicé prácticas en empresa en Blue Goat Labs, donde adquirí experiencia en el trabajo en equipo y en el desarrollo de proyectos reales.</p>
+            </div>
+          </section>
+          
+          <section id="experiencia-educacion" class="container">
+            <div class="card-header">
+              <h2><a href="https://www.barcelonactiva.cat/es/itacademy" target="_blank">IT Academy de Barcelona Activa</a></h2>
+            </div>
+            <div class="card-body">
+              <p>Actualmente estoy cursando un programa de front-end en IT Academy de Barcelona Activa para seguir mejorando mis habilidades en el desarrollo web.</p>
+            </div>
+          </section>
+          
+          
+
+        <section id="proyectos" class="container">
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <!-- Agrega más elementos .proyecto aquí -->
+                <div class="proyecto">
+                    <h3>Proyecto final del curso de introducción a la programación</h3>
+                    <a href="PROYECTO FINAL/index.html" target="_blank">
+                        <img src="imagenes\tragaperras.jpg" alt="Proyecto final">
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <h3>Página web de la boda de mis amigos</h3>
+                    <a href="https://jcamela.github.io/Judith-tutu.github.io/index.html" target="_blank">
+                        <img src="imagenes\boda.jpeg" alt="Boda de mis amigos">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
+            <ul class="logos">
+                <!-- Agrega más elementos .logo aquí -->
+                <li><img src="logos/javascript.png" alt="Logo de JavaScript" title="JavaScript"></li>
+                <li><img src="logos/github.png" alt="Logo de Github" title="Github"></li>
+                <li><img src="logos/css.png" alt="Logo de CSS" title="CSS"></li>
+                <li><img src="logos/html.png" alt="Logo de HTML" title="HTML"></li>
+                <li><img src="logos/vue.png" alt="Logo de Vue.js" title="VUE"></li>
+                <li><img src="logos/nuxt3.png" alt="Logo de Nuxt3" title="Nuxt3"></li>
+                <li><img src="logos/python.png" alt="Logo de Python" title="Python"></li>
+            </ul>
+        </section>
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a
+                    href="mailto:juancarlosamela@gmail.com">juancarlosamela@gmail.com</a></p>
+        </section>
     </main>
     <footer>
-        <hr>
-        <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a
-                href="mailto:juancarlosamela@gmail.com">juancarlosamela@gmail.com</a></p>
-
+        <div class="container">
+            <p>© 2023 Juan Carlos Amela Barrero.</p>
+        </div>
     </footer>
+
 </body>
 
 </html>

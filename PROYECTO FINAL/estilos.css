@@ -1,0 +1,250 @@
+body {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  animation: fondo-animacion 60s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: -10s;
+  animation-fill-mode: forwards;
+  animation-timing-function: unset;
+  margin: auto;
+  font-family: 'Pacifico', cursive;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+@keyframes fondo-animacion {
+  0% {
+    background-image: url('img/fondo1.jpg');
+  }
+  16.66666% {
+    background-image: url('img/fondo2.png');
+  }
+  33.33333% {
+    background-image: url('img/fondo3.png');
+  }
+  50% {
+    background-image: url('img/fondo4.jpg');
+  }
+  66.66666% {
+    background-image: url('img/fondo5.jpg');
+  }
+  83.33333% {
+    background-image: url('img/fondo6.jpg');
+  }
+  100% {
+    background-image: url('img/fondo1.jpg');
+  }
+}
+@media screen and (max-width: 768px) {
+  .ventanas, .botones{
+    max-width: 90%;
+  }
+  #lanzar{
+    width: 75px;
+    height: 75px;
+    font-size: 1em;
+    line-height: 55px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .ventanas, .botones{
+    max-width: 550px;
+  }
+  #lanzar{
+    width: 180px;
+    height: 180px;
+    font-size: 3.9em;
+    line-height: 140px;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+#monedas img:hover{
+  transform: scale(1.9);
+  box-shadow: 0 0 13px orange
+}
+#dinero{
+  color: white;
+}
+/* #credito:hover{
+
+} */
+section {
+  position: relative;
+  width: 550px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.ventanas,
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+
+}
+
+.ventana:nth-child(2),
+.boton:nth-child(2) {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.ventana {
+  margin-top: 40px;
+  padding: 6px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid orange;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.boton {
+  border: 0;
+  padding: 10px 25px;
+  background: linear-gradient(140deg,
+      rgba(80, 195, 242, 1) 0%,
+      rgba(210, 127, 217, 1) 100%);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  text-shadow: 0 1px #33333380;
+  box-shadow: 0 2px 3px 1px #33333320;
+}
+
+
+.boton:hover,
+#lanzar:hover {
+  background-color: white;
+  box-shadow: 0 0 13px orange;
+}
+
+header {
+  height: 168px;
+}
+
+#disponible {
+  display: flex;
+  align-items: center;
+}
+
+#credito {
+  color: orange;
+  font-size: 1.4em;
+}
+
+#dinero {
+  font-size: 5em;
+  line-height: 30px;
+}
+
+#lanzar {
+  cursor: pointer;
+  padding: 15px 18px 15px 10px;
+  user-select: none;
+  -moz-user-select: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3.9em;
+  line-height: 140px;
+  box-shadow: 0 0 13px black inset;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(140deg,
+      rgba(80, 195, 242, 1) 0%,
+      rgba(210, 127, 217, 1) 100%);
+  color: #fff;
+  margin: auto;
+  top: 1px;
+  box-sizing: border-box;
+}
+
+.euros {
+  font-size: 1.5rem;
+}
+
+#monedas {
+  width: 190px;
+  margin-top: 10px;
+}
+
+#monedas img {
+  width: 30px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+#velo {
+  display: none;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+#cuadro_mensaje {
+  width: 540px;
+  height: 105px;
+  border-radius: 12px;
+
+  border: 5px solid orange;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 355px;
+  padding: 10px;
+}
+
+#mensaje {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 1.7em;
+  color: orange;
+  padding: 2px;
+  text-align: center;
+}
+
+#cruz {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.moneda {
+  margin-top: 5px;
+}
+
+#reiniciar {
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(140deg,
+      rgba(80, 195, 242, 1) 0%,
+      rgba(210, 127, 217, 1) 100%);
+  color: #fff;
+  font-size: 1.7em;
+  font-family: 'Pacifico';
+  position: fixed;
+  border-radius: 30px;
+  left: 0;
+  right: 0;
+  top: 45.5%;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}
