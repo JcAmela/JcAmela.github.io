@@ -1,0 +1,48 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #f8f9fa;
+}
+
+.navbar a:hover {
+    color: #ffc107;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card-img-top {
+    height: 15vw;
+    object-fit: cover;
+}
+
+.logo {
+    max-width: 100px;
+    margin: 15px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #343a40;
+}
