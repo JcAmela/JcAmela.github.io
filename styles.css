@@ -1,3 +1,4 @@
+/* Estilos para la barra de navegación */
 .navbar {
     position: sticky;
     top: 0;
@@ -12,6 +13,7 @@
     color: #ffc107;
 }
 
+/* Estilos para las tarjetas */
 .card {
     width: 18rem;
 }
@@ -21,11 +23,13 @@
     object-fit: cover;
 }
 
+/* Estilos para el logotipo */
 .logo {
     max-width: 100px;
     margin: 15px;
 }
 
+/* Estilos para el pie de página */
 footer {
     position: fixed;
     left: 0;
@@ -36,13 +40,24 @@ footer {
     text-align: center;
 }
 
+/* Estilos para las imágenes del carrusel */
 .carousel-image {
     max-width: 100%;
     height: auto;
     max-height: 300px;
 }
 
+/* Estilos para los botones de control del carrusel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     background-color: #343a40;
+    opacity: 0.8;
+    border-radius: 50%;
+    filter: invert(1);
+    padding: 10px;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    opacity: 1;
 }

@@ -2,44 +2,81 @@
 <html lang="es">
 
 <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Juan Carlos Amela Barrero</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <header class="bg-light text-center py-5 mb-4">
-        <div class="container">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Juan Carlos Amela</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacion">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center py-5 mb-4">
             <h1 class="font-weight-light text-black">Bienvenido a mi Portfolio</h1>
+            <p class="lead text-muted">Soy un desarrollador web front-end apasionado por el diseño y la tecnología. Aquí encontrarás información sobre mi formación, proyectos y habilidades.</p>
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <!-- Formación -->
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Formación Section -->
+        <section class="row">
             <div class="col-md-6 mb-5">
                 <h2 id="formacion">Formación</h2>
                 <ul class="timeline">
+
                     <li>
                         <h5><a href="https://serveiocupacio.gencat.cat/es/soc/com-ens-organitzem/centres-propis-formacio-cifo-cfpa/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-hospitalet-de-llobregat/"
                                 target="_blank">CIFO Hospitalet</a></h5>
                         <p>Comencé mi trayectoria como estudiante con introducción a la programación JavaScript en CIFO
                             Hospitalet.</p>
                     </li>
+
                     <li>
                         <h5><a href="http://inkorformacion.com/" target="_blank">InKor Formación</a></h5>
                         <p>Continué mi formación con un curso de front-end en InKor Formación, donde aprendí las bases
                             del desarrollo web.</p>
                     </li>
+
                     <li>
                         <h5><a href="https://bluegoatlabs.com/" target="_blank">Blue Goat Labs</a></h5>
                         <p>Realicé prácticas en empresa en Blue Goat Labs, donde adquirí experiencia en el trabajo en
                             equipo y en el desarrollo de proyectos reales.</p>
                     </li>
+
                     <li>
                         <h5><a href="https://www.barcelonactiva.cat/es/itacademy" target="_blank">IT Academy de
                                 Barcelona Activa</a></h5>
@@ -48,22 +85,24 @@
                     </li>
                 </ul>
             </div>
-            <!-- Proyectos -->
+            <!-- Proyectos Section -->
             <div class="col-md-6 mb-5">
                 <h2 id="proyectos">Proyectos</h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
-                            <img src="imagenes\tragaperras.jpg" class="card-img-top" alt="Proyecto final">
+
+                            <img src="imagenes\tragaperras.jpg" class="card-img-top" alt="Imagen del proyecto final">
                             <div class="card-body">
                                 <h5 class="card-title">Proyecto final del curso de introducción a la programación</h5>
                                 <a href="PROYECTO FINAL/index.html" class="btn btn-primary" target="_blank">Ver Proyecto</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-6">
                         <div class="card">
-                            <img src="imagenes\boda.jpeg" class="card-img-top" alt="Boda de mis amigos">
+                            <img src="imagenes\boda.jpeg" class="card-img-top" alt="Imagen de la boda de mis amigos">
                             <div class="card-body">
                                 <h5 class="card-title">Página web de la boda de mis amigos</h5>
                                 <a href="https://jcamela.github.io/Judith-tutu.github.io/index.html" class="btn btn-primary" target="_blank">Ver Proyecto</a>
@@ -72,59 +111,68 @@
                     </div>
                 </div>
             </div>
-        </div>
-  <!-- Habilidades -->
-  <div class="row pb-5"> 
-    <div class="col-md-12 mb-5 pb-5">
-        <h2 id="habilidades">Habilidades</h2>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="logos/javascript.png" class="d-block mx-auto carousel-image" alt="JavaScript">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/github.png" class="d-block mx-auto carousel-image" alt="Github">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/css.png" class="d-block mx-auto carousel-image" alt="CSS">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/html.png" class="d-block mx-auto carousel-image" alt="HTML">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/vue.png" class="d-block mx-auto carousel-image" alt="Vue.js">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/nuxt3.png" class="d-block mx-auto carousel-image" alt="Nuxt3">
-                </div>
-                <div class="carousel-item">
-                    <img src="logos/python.png" class="d-block mx-auto carousel-image" alt="Python">
+        </section> 
+        <!-- End of Formación and Proyectos Section -->
+        <!-- Habilidades Section -->
+        <section class="row pb-5"> 
+            <div class="col-md-12 mb-5 pb-5">
+                <h2 id="habilidades">Habilidades</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="logos/javascript.png" class="d-block mx-auto carousel-image" alt="Logo de JavaScript">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="logos/github.png" class="d-block mx-auto carousel-image" alt="Logo de Github">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="logos/css.png" class="d-block mx-auto carousel-image" alt="Logo de CSS">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="logos/html.png" class="d-block mx-auto carousel-image" alt="Logo de HTML">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="logos/vue.png" class="d-block mx-auto carousel-image" alt="Logo de Vue.js">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="logos/nuxt3.png" class="d-block mx-auto carousel-image" alt="Logo de Nuxt3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="logos/python.png" class="d-block mx-auto carousel-image" alt="Logo de Python">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</div>
+        </section> 
+        <!-- End of Habilidades Section -->
+        <!-- Footer section -->
+        <footer class="py-3 bg-dark text-white">
+            <div class="container text-center">
+                <h2>Contacto</h2>
+                <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a
+                        href="mailto:juancarlosamela@gmail.com">juancarlosamela@gmail.com</a></p>
+                <p class="m-0">© 2023 Juan Carlos Amela Barrero.</p>
+            </div>
+        </footer>
 
-
-
-    <footer class="py-3 bg-dark text-white">
-        <div class="container text-center">
-            <h2>Contacto</h2>
-            <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a
-                    href="mailto:juancarlosamela@gmail.com">juancarlosamela@gmail.com</a></p>
-            <p class="m-0">© 2023 Juan Carlos Amela Barrero.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
+        <!-- Scripts section -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
 </html>
