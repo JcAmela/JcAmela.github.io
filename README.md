@@ -19,7 +19,8 @@ Soy un desarrollador web apasionado por el aprendizaje constante y la aplicació
 
 ## 📂 Proyectos
 
-- **Proyecto de Final de curso de introducción a la programación**: Un juego de tragaperras creado como proyecto final de un curso de introducción a la programación. [Ver proyecto](PROYECTO FINAL/index.html)
+- **Proyecto de Final de curso de introducción a la programación**: Un juego de tragaperras creado como proyecto final de un curso de introducción a la programación. 
+[Ver proyecto](PROYECTO FINAL/index.html)
 - **Sprints de It Academy**: Enlaces a los repositorios de GitHub de mis sprints durante mi formación en It Academy.
     - [📁 Sprint 1](https://github.com/JcAmela/Sprint1-ItAcademy.github.io.git)
     - [📁 Sprint 2](https://github.com/JcAmela/Sprint2-ItAcademy.github.io.git)
