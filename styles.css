@@ -1,21 +1,30 @@
-/* Estilos para la barra de navegación */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F5F5F5; 
+    color: #212121;
+}
+
 .navbar {
     position: sticky;
     top: 0;
     z-index: 100;
+    background: linear-gradient(to right, #FFAB40, #B2EBF2);
 }
 
 .navbar a {
-    color: #f8f9fa;
+    color: #212121;
 }
 
 .navbar a:hover {
-    color: #ffc107;
+    color: #212121;
 }
 
-/* Estilos para las tarjetas */
 .card {
     width: 18rem;
+    background: #B2EBF2;
+    color: #212121;
 }
 
 .card-img-top {
@@ -23,41 +32,76 @@
     object-fit: cover;
 }
 
-/* Estilos para el logotipo */
 .logo {
     max-width: 100px;
     margin: 15px;
 }
 
-/* Estilos para el pie de página */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: #343a40;
-    color: white;
+    background: linear-gradient(to right, #FFAB40, #B2EBF2);
+    color: #212121;
     text-align: center;
+    margin-top: auto;
+    margin-right: 0;
+    margin-left: 0;
 }
 
-/* Estilos para las imágenes del carrusel */
 .carousel-image {
     max-width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 220px;
 }
 
-/* Estilos para los botones de control del carrusel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: #343a40;
+    background-color: #212121;
     opacity: 0.8;
     border-radius: 50%;
-    filter: invert(1);
     padding: 10px;
 }
 
 .carousel-control-next-icon:hover,
 .carousel-control-prev-icon:hover {
     opacity: 1;
+}
+
+.container.text-center h1 {
+    color: #FFAB40;
+}
+
+.container.text-center p {
+    color: #212121;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem;
+    margin: 5px;
+    background: #FFAB40;
+    color: #212121;
+}
+
+.nav-pills .nav-link.active {
+    background: #B2EBF2;
+    color: #212121;
+}
+
+.tab-pane {
+    padding: 15px;
+    background-color: #B2EBF2;
+    color: #212121;
+    border: 1px solid #FFAB40;
+    border-radius: .25rem;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-pane a {
+    color: #FFAB40;
+}
+
+.tab-pane a:hover {
+    color: #212121;
 }

@@ -1,78 +1,22 @@
+/* Estilos generales */
 body {
+  margin: auto;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   background-size: cover;
-  animation: fondo-animacion 60s linear infinite;
-  animation-fill-mode: forwards;
-  animation-delay: -10s;
-  animation-fill-mode: forwards;
-  animation-timing-function: unset;
-  margin: auto;
-  font-family: 'Pacifico', cursive;
-  width: 100%;
-  height: 100%;
   background-color: black;
-}
-@keyframes fondo-animacion {
-  0% {
-    background-image: url('img/fondo1.jpg');
-  }
-  16.66666% {
-    background-image: url('img/fondo2.png');
-  }
-  33.33333% {
-    background-image: url('img/fondo3.png');
-  }
-  50% {
-    background-image: url('img/fondo4.jpg');
-  }
-  66.66666% {
-    background-image: url('img/fondo5.jpg');
-  }
-  83.33333% {
-    background-image: url('img/fondo6.jpg');
-  }
-  100% {
-    background-image: url('img/fondo1.jpg');
-  }
-}
-@media screen and (max-width: 768px) {
-  .ventanas, .botones{
-    max-width: 90%;
-  }
-  #lanzar{
-    width: 75px;
-    height: 75px;
-    font-size: 1em;
-    line-height: 55px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .ventanas, .botones{
-    max-width: 550px;
-  }
-  #lanzar{
-    width: 180px;
-    height: 180px;
-    font-size: 3.9em;
-    line-height: 140px;
-  }
+  font-family: 'Pacifico', cursive;
+  animation: fondo-animacion 60s linear infinite both;
 }
 
 img {
   max-width: 100%;
   vertical-align: top;
 }
-#monedas img:hover{
-  transform: scale(1.9);
-  box-shadow: 0 0 13px orange
-}
-#dinero{
-  color: white;
-}
-/* #credito:hover{
 
-} */
+/* Estilos de sección */
 section {
   position: relative;
   width: 550px;
@@ -80,12 +24,22 @@ section {
   margin-top: 20px;
 }
 
+/* Animación de fondo */
+@keyframes fondo-animacion {
+  0%, 100% {background-image: url('img/fondo1.jpg');}
+  16.66666% {background-image: url('img/fondo2.png');}
+  33.33333% {background-image: url('img/fondo3.png');}
+  50% {background-image: url('img/fondo4.jpg');}
+  66.66666% {background-image: url('img/fondo5.jpg');}
+  83.33333% {background-image: url('img/fondo6.jpg');}
+}
+
+/* Estilos de los elementos de la ventana y botones */
 .ventanas,
 .botones {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
-
 }
 
 .ventana:nth-child(2),
@@ -94,19 +48,7 @@ section {
   margin-right: 16px;
 }
 
-.ventana {
-  margin-top: 40px;
-  padding: 6px;
-  width: 150px;
-  height: 150px;
-  border: 4px solid orange;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
+/* Estilos específicos de los botones */
 .boton {
   border: 0;
   padding: 10px 25px;
@@ -120,11 +62,33 @@ section {
   box-shadow: 0 2px 3px 1px #33333320;
 }
 
-
 .boton:hover,
 #lanzar:hover {
   background-color: white;
   box-shadow: 0 0 13px orange;
+}
+
+/* Estilos específicos de las ventanas */
+.ventana {
+  margin-top: 40px;
+  padding: 6px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid orange;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos específicos de la sección de monedas */
+#monedas img:hover {
+  transform: scale(1.9);
+  box-shadow: 0 0 13px orange;
+}
+
+#dinero {
+  color: white;
 }
 
 header {
@@ -146,6 +110,9 @@ header {
   line-height: 30px;
 }
 
+/* Continuación de estilos */
+
+/* Estilos para el botón de lanzar */
 #lanzar {
   cursor: pointer;
   padding: 15px 18px 15px 10px;
@@ -174,6 +141,7 @@ header {
   font-size: 1.5rem;
 }
 
+/* Estilos para el bloque de monedas */
 #monedas {
   width: 190px;
   margin-top: 10px;
@@ -185,6 +153,7 @@ header {
   margin-bottom: 3px;
 }
 
+/* Estilos para los mensajes */
 #velo {
   display: none;
   width: 100%;
@@ -202,7 +171,6 @@ header {
   width: 540px;
   height: 105px;
   border-radius: 12px;
-
   border: 5px solid orange;
   background-color: rgba(255, 255, 255, 0.5);
   position: relative;
@@ -226,10 +194,7 @@ header {
   cursor: pointer;
 }
 
-.moneda {
-  margin-top: 5px;
-}
-
+/* Estilos para el botón de reiniciar */
 #reiniciar {
   border: 0;
   cursor: pointer;
@@ -247,4 +212,58 @@ header {
   width: 200px;
   height: 50px;
   margin: auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .ventanas, .botones{
+    max-width: 90%;
+  }
+  #lanzar{
+    width: 75px;
+    height: 75px;
+    font-size: 1em;
+    line-height: 55px;
+  }
+}
+/* Continuación de estilos */
+
+@media screen and (min-width: 769px) {
+  .ventanas, .botones{
+    max-width: 550px;
+  }
+  #lanzar{
+    width: 180px;
+    height: 180px;
+    font-size: 3.9em;
+    line-height: 140px;
+  }
+}
+
+/* Estilos para el encabezado */
+header {
+  height: 168px;
+}
+
+/* Estilos para la sección disponible */
+#disponible {
+  display: flex;
+  align-items: center;
+}
+
+#credito {
+  color: orange;
+  font-size: 1.4em;
+}
+
+/* Estilos para el dinero */
+#dinero{
+  color: white;
+  font-size: 5em;
+  line-height: 30px;
+}
+
+/* Estilos para la moneda */
+.moneda {
+  margin-top: 5px;
 }
