@@ -4,7 +4,7 @@ Bienvenido a mi portfolio de desarrollo web. Aquí podrás encontrar una recopil
 
 ## 👨‍💻 Sobre mí
 
-Soy un desarrollador web apasionado por el aprendizaje constante y la aplicación de tecnologías modernas. Durante mi formación en It Academy, he tenido la oportunidad de adquirir y aplicar habilidades en JavaScript, CSS, y HTML, así como en el uso de framework como Bootstrap, Vue.js, Angular, y Nuxt3.
+Soy un desarrollador web apasionado por el aprendizaje constante y la aplicación de tecnologías modernas. Durante mi formación en It Academy, he tenido la oportunidad de adquirir y aplicar habilidades en JavaScript, Typescript, CSS, y HTML, así como en el uso de framework como Bootstrap, Vue.js, Angular, y Nuxt3.
 
 ## 🎯 Habilidades
 
