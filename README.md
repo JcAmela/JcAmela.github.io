@@ -4,7 +4,7 @@ Bienvenido a mi portfolio de desarrollo web. Aquí podrás encontrar una recopil
 
 ## 👨‍💻 Sobre mí
 
-Soy un desarrollador web apasionado por el aprendizaje constante y la aplicación de tecnologías modernas. Durante mi formación en It Academy, he tenido la oportunidad de adquirir y aplicar habilidades en JavaScript, CSS, y HTML, así como en el uso de marcos como Vue.js, Angular, y Nuxt3.
+Soy un desarrollador web apasionado por el aprendizaje constante y la aplicación de tecnologías modernas. Durante mi formación en It Academy, he tenido la oportunidad de adquirir y aplicar habilidades en JavaScript, CSS, y HTML, así como en el uso de framework como Bootstrap, Vue.js, Angular, y Nuxt3.
 
 ## 🎯 Habilidades
 
@@ -25,6 +25,7 @@ Soy un desarrollador web apasionado por el aprendizaje constante y la aplicació
     - [📁 Sprint 1](https://github.com/JcAmela/Sprint1-ItAcademy.github.io.git)
     - [📁 Sprint 2](https://github.com/JcAmela/Sprint2-ItAcademy.github.io.git)
     - [📁 Sprint 3](https://github.com/JcAmela/Sprint3-ItAcademy.github.io.git)
+    - [📁 Sprint 4](https://github.com/JcAmela/Sprint4-ItAcademy.github.io.git)
 
 ## 🎓 Formación
 
