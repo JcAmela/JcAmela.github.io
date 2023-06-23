@@ -26,7 +26,7 @@ Soy un desarrollador web apasionado por el aprendizaje constante y la aplicació
     - [📁 Sprint 2](https://github.com/JcAmela/Sprint2-ItAcademy.github.io.git)
     - [📁 Sprint 3](https://github.com/JcAmela/Sprint3-ItAcademy.github.io.git)
     - [📁 Sprint 4](https://github.com/JcAmela/Sprint4-ItAcademy.github.io.git)
-    - [📁 Sprint 5](https://github.com/JcAmela/Sprint5-ItAcademy.github.io.git))
+    - [📁 Sprint 5](https://github.com/JcAmela/Sprint5-ItAcademy.github.io.git)
      
 ## 🎓 Formación
 
